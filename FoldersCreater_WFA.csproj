@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include=".FolderCreaterDataResource\" />
+    <Folder Include="bin\Debug\net6.0-windows\11\" />
+    <Folder Include="bin\Debug\net6.0-windows\12\" />
+    <Folder Include="bin\Debug\net6.0-windows\21\" />
+    <Folder Include="bin\Debug\net6.0-windows\33\" />
+  </ItemGroup>
+
+</Project>
