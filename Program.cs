@@ -18,7 +18,9 @@ namespace FoldersCreater_WFA
 
             DataJsonHelpers.LocationsFromJSON(); //Заполняю поле данными...
 
-            MessageBox.Show(string.Format("Count: {0}", AppData.GetCountLoc)); //Тут поле пустое == null
+            MessageBox.Show(string.Format("Count: {0}", AppData.Locations.Locations.Count)); //Тут поле пустое == null
+
+
             
 
         }
