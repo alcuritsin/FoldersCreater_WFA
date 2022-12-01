@@ -373,6 +373,8 @@ namespace FoldersCreater_WFA
             this.comboBoxClientName.DataSource = AppData.Clients;
 
             this.linkLabelVersion.Text = AppData.VersionApp;
+
+            this.Init();
         }
 
         #endregion
@@ -404,5 +406,34 @@ namespace FoldersCreater_WFA
         private System.Windows.Forms.Label labelInfo;
         private System.Windows.Forms.ListBox listBoxClientObjects;
 
+
+        private List<String> LocationNames = new List<String>();
+
+        public void Init()
+        {
+
+            //DataJsonHelpers.LocationsFromJSON();
+
+            //if (AppData.Locations == null) return;
+
+            //comboBoxClientName.Items.Clear();
+
+            //LocationNames.Add(AppData.Locations.Locations.First<>);
+
+            //foreach (var location in AppData.Locations.Locations)
+            //{
+            //    //if (LocationNames.Count == 0) LocationNames.Add(location.LocationName);
+
+            //    foreach (var loc in LocationNames)
+            //    {
+            //        if (!location.LocationName.Equals(loc))
+            //        {
+            //            LocationNames.Add(location.LocationName);
+            //        }
+            //    }
+            //}
+
+            //this.comboBoxLocation.DataSource = LocationNames;
+        }
     }
 }

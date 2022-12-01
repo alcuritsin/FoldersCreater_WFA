@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,8 +11,22 @@ namespace FoldersCreater_WFA.DataBase
 {
     public static class AppData
     {
-        public static List<String> Clients { get; set; }
-        public static ListLocations Locations { get; set; }
+        public static String DEFAULT_FOLDER_PATH = ".FolderCreaterDataResource";
+        public static String LOCATIONS_FILE_NAME = ".ObjectLocations.json";
+
+
+        public static List<String>? Clients { get; set; }
+        public static ListLocations? Locations { get; set; }
+
+        public static String GetCountLoc
+        { 
+            get
+            {
+                if (Locations == null) return "Null";
+
+                return Locations.Locations.Count.ToString();
+            }
+        }
 
         public static string VersionApp
         {

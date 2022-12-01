@@ -1,3 +1,4 @@
+using FoldersCreater_WFA.DataBase;
 using FoldersCreater_WFA.DataBase.Locations;
 
 namespace FoldersCreater_WFA
@@ -14,6 +15,14 @@ namespace FoldersCreater_WFA
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new MainForm());
+
+            DataJsonHelpers.LocationsFromJSON(); //Заполняю поле данными...
+
+            MessageBox.Show(string.Format("Count: {0}", AppData.GetCountLoc)); //Тут поле пустое == null
+            
+
         }
+
+
     }
 }
